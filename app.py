@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     hobbies_list = ["Coding", "Reading", "Hiking"]
-    return render_template("index.html", user_name="Sam" , hobbies = hobbies_list)
+    return render_template("index.html", user_name="Pedro" , hobbies = hobbies_list)
 
 @app.route("/about")
 def about():
