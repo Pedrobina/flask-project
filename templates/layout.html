@@ -1,7 +1,12 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
-    <nav><a href="{{ url_for('home') }}">Home</a> | <a href="{{ url_for('about') }}">About</a></nav>
-    
-    <!-- This is where individual page content gets injected -->
-    {% block content %}
-    {% endblock %}
+  <nav>
+    <a href="{{ url_for('home') }}">Home</a> |
+    <a href="{{ url_for('about') }}">About</a>
+  </nav>
+
+  <!-- This is where individual page content gets injected -->
+  {% block content %} {% endblock %}
 </body>
